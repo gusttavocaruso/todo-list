@@ -1,0 +1,99 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 50px auto;
+}
+
+#cabecalho {
+  color: seagreen;
+  font-size: xx-large;
+  font-family: monospace;
+  font-weight: 1000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: small;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#texto-tarefa {
+  font-size: large;
+  border-radius: 10px;
+}
+
+#criar-tarefa {
+  font-size: large;
+  display: inline-block;
+  width: 40%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: seagreen;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.liTask {
+  width: 80%;
+  border-style: groove;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: large;
+  margin: 10px auto;
+  list-style:upper-roman;
+}
+
+#selected-task {
+  background-color: seagreen;
+  color: white;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+#apaga-tudo {
+  display: inline-block;
+  font-size: large;
+  width: 30%;
+  margin: 10px auto;
+  border-radius: 30px;
+  color: whitesmoke;
+  font-weight: 600;
+  background-color: rgb(233, 113, 113);
+}
+
+#remover-finalizados {
+  font-size: large;
+  width: 70%;
+  margin: auto;
+  border: none;
+  color: whitesmoke;
+  font-weight: 600;
+  background-color: rgb(230, 162, 162);
+}
+
+#funcionamento {
+  font-family: monospace;
+  margin: 5px auto;
+}
+
+@media (max-width: 850px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 50px auto;
+  }
+}
